@@ -1,0 +1,77 @@
+<wfs:FeatureCollection xmlns:bm="http://data.bordeaux-metropole.fr/wfs" xmlns:gml="http://www.opengis.net/gml" xmlns:wfs="http://www.opengis.net/wfs" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://data.bordeaux-metropole.fr/wfs http://data.lacub.fr/wfs?key=9Y2RU3FTE8&amp;SERVICE=WFS&amp;VERSION=1.1.0&amp;REQUEST=DescribeFeatureType&amp;TYPENAME=ST_PARK_P&amp;OUTPUTFORMAT=text/xml;%20subtype=gml/3.1.1  http://www.opengis.net/wfs http://schemas.opengis.net/wfs/1.1.0/wfs.xsd">
+    <gml:boundedBy>
+        <gml:Envelope srsName="EPSG:4326">
+            <gml:lowerCorner>44.774274 -0.701561</gml:lowerCorner>
+            <gml:upperCorner>44.944685 -0.510386</gml:upperCorner>
+        </gml:Envelope>
+    </gml:boundedBy>
+    <gml:featureMember>
+        <bm:ST_PARK_P gml:id="ST_PARK_P.211">
+            <gml:boundedBy>
+                <gml:Envelope srsName="EPSG:4326">
+                    <gml:lowerCorner>44.888824 -0.517676</gml:lowerCorner>
+                    <gml:upperCorner>44.888824 -0.517676</gml:upperCorner>
+                </gml:Envelope>
+            </gml:boundedBy>
+            <bm:geometry>
+            </bm:geometry>
+            <bm:GID>211</bm:GID>
+            <bm:IDENT>CUBPK49</bm:IDENT>
+            <bm:NOM>Parc-Relais La Gardette (Tout Public) - Tbm Keolis</bm:NOM>
+            <bm:LIBRES>236</bm:LIBRES>
+            <bm:TOTAL>242</bm:TOTAL>
+            <bm:PREPAYE>0</bm:PREPAYE>
+            <bm:ETAT>LIBRE</bm:ETAT>
+            <bm:CONNECTE>1</bm:CONNECTE>
+            <bm:URL>https://www.infotbm.com/les-parc-relais-tout-public</bm:URL>
+            <bm:TA_TITUL>0</bm:TA_TITUL>
+            <bm:TA_NTITUL>3,1</bm:TA_NTITUL>
+            <bm:TH_QUAR>3,1</bm:TH_QUAR>
+            <bm:TH_DEMI>3,1</bm:TH_DEMI>
+            <bm:TH_HEUR>3,1</bm:TH_HEUR>
+            <bm:TH_2>3,1</bm:TH_2>
+            <bm:TH_3>3,1</bm:TH_3>
+            <bm:TH_4>3,1</bm:TH_4>
+            <bm:TH_10>3,1</bm:TH_10>
+            <bm:TH_24/>
+            <bm:TH_NUIT/>
+            <bm:TA_RESMOI/>
+            <bm:TA_NRES7J/>
+            <bm:TA_MOIMOT/>
+            <bm:TA_MOIVEL>0</bm:TA_MOIVEL>
+            <bm:TV_1H>0</bm:TV_1H>
+            <bm:INFOR>3,1 conducteur seul, 4 pour 2 à 5 personnes dans VL</bm:INFOR>
+            <bm:PROPR>BORDEAUX_METROPOLE</bm:PROPR>
+            <bm:TITUL>TBM</bm:TITUL>
+            <bm:EXPLOIT>KEOLIS</bm:EXPLOIT>
+            <bm:TYPGEST>DELEGATION_DE_SERVICE_PUBLIC_POUR_BORDEAUX_METROPOLE</bm:TYPGEST>
+            <bm:SECTEUR>PERIPHERIE</bm:SECTEUR>
+            <bm:INSEE>33032</bm:INSEE>
+            <bm:AN_SERV>2008</bm:AN_SERV>
+            <bm:TYPE>SURFACE</bm:TYPE>
+            <bm:NB_NIV>1</bm:NB_NIV>
+            <bm:NP_HGINF>0</bm:NP_HGINF>
+            <bm:NP_HGSUP>0</bm:NP_HGSUP>
+            <bm:NP_FOURR>0</bm:NP_FOURR>
+            <bm:NP_GLOBAL>241</bm:NP_GLOBAL>
+            <bm:NP_TOTAL>241</bm:NP_TOTAL>
+            <bm:NP_PR>241</bm:NP_PR>
+            <bm:NP_PMR>5</bm:NP_PMR>
+            <bm:NP_VLE>0</bm:NP_VLE>
+            <bm:NP_MOBALT>0</bm:NP_MOBALT>
+            <bm:NP_COVOIT>5</bm:NP_COVOIT>
+            <bm:NP_STLAV>0</bm:NP_STLAV>
+            <bm:NP_2RMOT>0</bm:NP_2RMOT>
+            <bm:NP_2RELE>0</bm:NP_2RELE>
+            <bm:NP_VELTOT>30</bm:NP_VELTOT>
+            <bm:NP_VELEC>7</bm:NP_VELEC>
+            <bm:ADRESSE>Chemin du Grand Came 33310 Lormont</bm:ADRESSE>
+            <bm:GABARI_MAX>2,2</bm:GABARI_MAX>
+            <bm:GABARI_STD>2,2</bm:GABARI_STD>
+            <bm:TA_TYPE>PAYANT_TARIF_PARC_RELAIS</bm:TA_TYPE>
+            <bm:TA_HANDI>AUTRE</bm:TA_HANDI>
+            <bm:CDATE>2018-06-01 02:00:00</bm:CDATE>
+            <bm:MDATE>2020-02-09 09:25:11</bm:MDATE>
+        </bm:ST_PARK_P>
+    </gml:featureMember>
+</wfs:FeatureCollection>

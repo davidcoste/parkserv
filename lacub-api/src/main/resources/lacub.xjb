@@ -1,0 +1,79 @@
+<jaxb:bindings xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+               xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                version="1.0">
+    <jaxb:globalBindings
+        underscoreBinding="asCharInWord"
+        enableJavaNamingConventions="false"
+    />
+
+    <jaxb:bindings schemaLocation="wfs-1.1.0.xsd">
+        <jaxb:schemaBindings>
+            <jaxb:package name="fr.bordeaux_metropole.data.wfs"/>
+        </jaxb:schemaBindings>
+    </jaxb:bindings>
+
+    <jaxb:bindings schemaLocation="http://schemas.opengis.net/gml/3.1.1/base/gml.xsd">
+        <jaxb:schemaBindings>
+            <jaxb:package name="fr.bordeaux_metropole.data.wfs"/>
+        </jaxb:schemaBindings>
+    </jaxb:bindings>
+
+   <jaxb:bindings schemaLocation="http://schemas.opengis.net/gml/3.1.1/base/feature.xsd">
+        <jaxb:bindings node="//xs:complexType[@name='FeatureCollectionType']">
+            <jaxb:class name="GmlFeatureCollectionType"/>
+        </jaxb:bindings>
+        <jaxb:bindings node="//xs:element[@name='FeatureCollection']">
+            <jaxb:class name="GmlFeatureCollection"/>
+        </jaxb:bindings>
+    </jaxb:bindings>
+
+    <jaxb:bindings schemaLocation="http://www.w3.org/1999/xlink.xsd">
+        <jaxb:bindings node="//xs:attributeGroup[@name='locatorAttrs']">
+            <jaxb:bindings node=".//xs:attribute[@ref='xlink:title']">
+                <jaxb:property name="locatorTitle"/>
+            </jaxb:bindings>
+        </jaxb:bindings>
+        <jaxb:bindings node="//xs:attributeGroup[@name='arcAttrs']">
+            <jaxb:bindings node=".//xs:attribute[@ref='xlink:title']">
+                <jaxb:property name="arcTitle"/>
+            </jaxb:bindings>
+        </jaxb:bindings>
+    </jaxb:bindings>
+    <jaxb:bindings schemaLocation="http://schemas.opengis.net/gml/3.1.1/base/defaultStyle.xsd">
+        <!-- handle gemometryStyle case sensitivity -->
+        <jaxb:bindings node="//xs:element[@name='geometryStyle']">
+            <jaxb:factoryMethod name="geometryStyle"/>
+        </jaxb:bindings>
+        <jaxb:bindings node="//xs:element[@name='GeometryStyle']">
+            <jaxb:factoryMethod name="GeometryStyle"/>
+        </jaxb:bindings>
+        <!-- handle featureStyle case sensitivity -->
+        <jaxb:bindings node="//xs:element[@name='featureStyle']">
+            <jaxb:factoryMethod name="featureStyle"/>
+        </jaxb:bindings>
+        <jaxb:bindings node="//xs:element[@name='FeatureStyle']">
+            <jaxb:factoryMethod name="FeatureStyle"/>
+        </jaxb:bindings>
+        <!-- handle topologyStyle case sensitivity -->
+        <jaxb:bindings node="//xs:element[@name='topologyStyle']">
+            <jaxb:factoryMethod name="topologyStyle"/>
+        </jaxb:bindings>
+        <jaxb:bindings node="//xs:element[@name='TopologyStyle']">
+            <jaxb:factoryMethod name="TopologyStyle"/>
+        </jaxb:bindings>
+        <!-- handle labelStyle case sensitivity -->
+        <jaxb:bindings node="//xs:element[@name='labelStyle']">
+            <jaxb:factoryMethod name="labelStyle"/>
+        </jaxb:bindings>
+        <jaxb:bindings node="//xs:element[@name='LabelStyle']">
+            <jaxb:factoryMethod name="LabelStyle"/>
+        </jaxb:bindings>
+        <!-- handle graphStyle case sensitivity -->
+        <jaxb:bindings node="//xs:element[@name='graphStyle']">
+            <jaxb:factoryMethod name="graphStyle"/>
+        </jaxb:bindings>
+        <jaxb:bindings node="//xs:element[@name='GraphStyle']">
+            <jaxb:factoryMethod name="GraphStyle"/>
+        </jaxb:bindings>
+    </jaxb:bindings>
+</jaxb:bindings>

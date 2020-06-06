@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Bordeaux Métropole WFS Server - version 3.0.5 - Conditions d'utilisation sur http://data.bordeaux-metropole.fr -->
+<schema xmlns:bm="http://data.bordeaux-metropole.fr/wfs" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml" targetNamespace="http://data.bordeaux-metropole.fr/wfs" elementFormDefault="qualified" version="0.1">
+
+  <import namespace="http://www.opengis.net/gml" schemaLocation="http://schemas.opengis.net/gml/3.1.1/base/gml.xsd"/>
+
+  <element name="ST_PARK_P" type="bm:ST_PARK_PType" substitutionGroup="gml:_Feature"/>
+
+  <complexType name="ST_PARK_PType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="geometry" type="gml:GeometryPropertyType" minOccurs="0" maxOccurs="1"/>
+          <element name="GID" minOccurs="0" type="integer"/>
+          <element name="IDENT" minOccurs="0" type="string"/>
+          <element name="NOM" minOccurs="0" type="string"/>
+          <element name="LIBRES" minOccurs="0" type="integer"/>
+          <element name="TOTAL" minOccurs="0" type="integer"/>
+          <element name="PREPAYE" minOccurs="0" type="string"/>
+          <element name="ETAT" minOccurs="0" type="string"/>
+          <element name="CONNECTE" minOccurs="0" type="string"/>
+          <element name="URL" minOccurs="0" type="string"/>
+          <element name="TA_TITUL" minOccurs="0" type="double"/>
+          <element name="TA_NTITUL" minOccurs="0" type="double"/>
+          <element name="TH_QUAR" minOccurs="0" type="double"/>
+          <element name="TH_DEMI" minOccurs="0" type="double"/>
+          <element name="TH_HEUR" minOccurs="0" type="double"/>
+          <element name="TH_2" minOccurs="0" type="double"/>
+          <element name="TH_3" minOccurs="0" type="double"/>
+          <element name="TH_4" minOccurs="0" type="double"/>
+          <element name="TH_10" minOccurs="0" type="double"/>
+          <element name="TH_24" minOccurs="0" type="double"/>
+          <element name="TH_NUIT" minOccurs="0" type="double"/>
+          <element name="TA_RESMOI" minOccurs="0" type="double"/>
+          <element name="TA_NRES7J" minOccurs="0" type="double"/>
+          <element name="TA_MOIMOT" minOccurs="0" type="double"/>
+          <element name="TA_MOIVEL" minOccurs="0" type="double"/>
+          <element name="TV_1H" minOccurs="0" type="double"/>
+          <element name="INFOR" minOccurs="0" type="string"/>
+          <element name="PROPR" minOccurs="0" type="string"/>
+          <element name="TITUL" minOccurs="0" type="string"/>
+          <element name="EXPLOIT" minOccurs="0" type="string"/>
+          <element name="TYPGEST" minOccurs="0" type="string"/>
+          <element name="SECTEUR" minOccurs="0" type="string"/>
+          <element name="INSEE" minOccurs="0" type="string"/>
+          <element name="AN_SERV" minOccurs="0" type="double"/>
+          <element name="TYPE" minOccurs="0" type="string"/>
+          <element name="NB_NIV" minOccurs="0" type="integer"/>
+          <element name="NP_HGINF" minOccurs="0" type="integer"/>
+          <element name="NP_HGSUP" minOccurs="0" type="integer"/>
+          <element name="NP_FOURR" minOccurs="0" type="integer"/>
+          <element name="NP_GLOBAL" minOccurs="0" type="integer"/>
+          <element name="NP_TOTAL" minOccurs="0" type="integer"/>
+          <element name="NP_PR" minOccurs="0" type="integer"/>
+          <element name="NP_PMR" minOccurs="0" type="integer"/>
+          <element name="NP_VLE" minOccurs="0" type="integer"/>
+          <element name="NP_MOBALT" minOccurs="0" type="integer"/>
+          <element name="NP_COVOIT" minOccurs="0" type="integer"/>
+          <element name="NP_STLAV" minOccurs="0" type="integer"/>
+          <element name="NP_2RMOT" minOccurs="0" type="integer"/>
+          <element name="NP_2RELE" minOccurs="0" type="integer"/>
+          <element name="NP_VELTOT" minOccurs="0" type="integer"/>
+          <element name="NP_VELEC" minOccurs="0" type="integer"/>
+          <element name="ADRESSE" minOccurs="0" type="string"/>
+          <element name="GABARI_MAX" minOccurs="0" type="double"/>
+          <element name="GABARI_STD" minOccurs="0" type="double"/>
+          <element name="TA_TYPE" minOccurs="0" type="string"/>
+          <element name="TA_HANDI" minOccurs="0" type="string"/>
+          <element name="CDATE" minOccurs="0" type="date"/>
+          <element name="MDATE" minOccurs="0" type="date"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+
+</schema>

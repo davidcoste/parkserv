@@ -1,0 +1,67 @@
+openapi: 3.0.0
+info:
+  title: CarPark API
+  description: This API returns the list of car parks available from a given GPS position. It takes its data from an external provider such as the CUB (Comunauté Urbaine de Bordeaux) Restful API
+  version: 1.0.0
+servers:
+  - url: http://localhost:8080
+    description: Development server
+paths:
+  /parkserv/v1_0/carparks:
+    get:
+      summary: Return a list of car park information with the distance from a given GPS position.
+      description: >-
+        Return a list of car park information with the distance from a given GPS position.
+        It is aimed to be used by a mobile device that will provide its own position.
+        The results are sorted by their distance from the reference position.
+      parameters:
+        - name: latitude
+          in: query
+          description: >-
+            The latitude n degree of the reference position.
+            It must be in the range from -90 to +90.
+          required: true
+          schema:
+            type: number
+        - name: longitude
+          in: query
+          description: >-
+            The longitude in degree of the reference position.
+            It must be in the range from -180 to +180
+          required: true
+          schema:
+            type: number
+      responses:
+        '200':
+          description: Successful.
+          content:
+            application/json:
+              example:
+                [{"carPark":{"name":"Parc-Relais Quarante Journaux - Tbm Keolis","address":"Rue du Professeur André Lavignolle 33000 Bordeaux","latitude":44.883353,"longitude":-0.568774,"capacity":180,"free":196},"distance":582.09343734876}]
+              schema:
+                type: array
+                items:
+                  type: string
+        '400':
+          description: |-
+            This status is returned when :
+            * the latitude and/or longitude parameters are not provided
+            * the latitude is not in the range from -90 to +90
+            * the longitude is not in the range from -180 to +180
+            * the latitude or longitude are not numbers
+          content:
+            application/json:
+              example:
+                {"code":400,"msg":"400 BAD_REQUEST \"Type mismatch.\"; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Double'; nested exception is java.lang.NumberFormatException: For input string: \"-0.57215A\""}
+        '500':
+          description: |-
+            Unexpected error:
+            * the external API is not reachable
+            * ...
+          content:
+            application/json:
+              example:
+                {"timestamp":"2020-02-20T21:40:33.778+0000","path":"/parkserv/v1_0/carparks","status":500,"error":"Internal Server Error","message":"data.lacub.fr","requestId":"9eae7ea6","code":500,"msg":"data.lacub.fr"}
+
+
+
